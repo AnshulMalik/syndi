@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+//#include "samba/source3/include/libsmbclient.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -9,7 +11,9 @@ MainWindow::MainWindow(QWidget *parent) :
 }
 
 MainWindow::~MainWindow() {
+//    SMBCCTX *context;
     delete ui;
+//    context = smbc_new_context();
 }
 
 void MainWindow::showAliveHosts() {

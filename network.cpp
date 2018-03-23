@@ -15,7 +15,7 @@ QList<QString> Network::aliveHosts() {
             parameters << "-n" << "1";
         #else
             parameters << "-c 1";
-            parameters << "-W" << ".5";
+            parameters << "-W" << "1";
         #endif
             parameters << host;
 

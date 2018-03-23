@@ -25,7 +25,7 @@ class Network {
                 foreach(QNetworkAddressEntry entry, entries) {
                     QHostAddress addr = entry.ip();
 
-                    if(!addr.isLinkLocal() && addr.toString() != "127.0.0.1" && addr.toString() != "::1") {
+                    if(addr.toString() != "127.0.0.1" && addr.toString() != "::1") {
                         qDebug() << addr.toString();
                         valid_interfaces.append(entry);
                     }

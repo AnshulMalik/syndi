@@ -6,6 +6,8 @@
 
 QT       += core gui network concurrent
 
+#LIBS += -L /Users/swiss/Desktop/Syndi/samba/source3/lib -lsmbclient
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Syndi
